@@ -1,0 +1,130 @@
+.content {
+    margin: 200px 20px 0 20px;
+ }
+ .block {
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .block-left {
+    display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     padding: 0 70px 0 0;
+     width: 50%;
+ }
+ 
+ .block-img {
+     background-color: #231F20;
+     border-radius: 50px;
+     width: 430px;
+     height: 460px;
+ }
+ 
+ .block-header {
+    font-weight: 700;
+    font-size: 40px;
+ }
+ 
+ .block-text {
+     font-weight: 200;
+     font-size: 22px;
+     margin: 20px 0 30px 0;
+     font-family: sans-serif;
+ }
+ 
+ .block-buttom  {
+     padding: 20px 60px;
+     color: #000;
+     text-decoration: none;
+     border: 3px solid #201E1E;
+     border-radius: 11px;
+     transition: 0.3s;
+     font-size: 20px;
+     font-weight: 300;
+     display: flex;
+     justify-content: center;
+    align-self: flex-start;
+ }
+ .block-buttom:hover{
+     background-color: #201E1E;
+     color: #26AB72;
+ }
+ 
+ @media (max-width: 1024px){
+    .block-header{
+        font-size: 30px;
+    }
+    .block-buttom{
+        padding: 20px;
+    }
+ }
+ @media(max-width:768px){
+    .content{
+        margin: 80px 20px 0 20px;
+    }
+    .block{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .block-right{
+        margin-top: 20px;
+    }
+    .block-img {
+        width: 370px;
+        height: 380px;
+    }
+    .block-left{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .block-text{
+        margin: 30px 0;
+    }
+    .block-buttom{
+        justify-content: center;
+        align-self: auto;
+        padding: 17px;
+    }
+}
+@media (max-width: 425px){
+    .block{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .block-left{
+        padding: 0;
+        margin-right: 10px;
+    }
+    .block-img{
+        width: 140px;
+    height: 150px;
+    }
+    .block-header{
+        font-size: 14px;
+    }
+    .block-text{
+        font-size: 11px;
+        margin: 15px 0;
+    }
+    .block-buttom {
+        align-self: flex-start;
+        font-size: 11px;
+        border: 2px solid #000;
+        padding: 10px;
+    }
+}
+@media(max-width:375px){
+    .content{
+        margin-top: 50px;
+    }
+    .block{
+        flex-direction: column-reverse;
+    }
+    .block-right{
+        align-self: center;
+    }
+    .block-left{
+        margin: 20px 0 0 0;
+    }
+}

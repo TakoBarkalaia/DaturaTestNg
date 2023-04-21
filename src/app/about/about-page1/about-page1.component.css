@@ -1,0 +1,144 @@
+.content {
+    margin: 200px 20px 0 20px;
+ }
+ .block {
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .block-left {
+    display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     padding: 0 70px 0 0;
+     width: 50%;
+ }
+ .block-right{
+    background-color: #231F20;
+    border-radius: 50px;
+    width: 452px;
+    height: 488px;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.3s;
+ }
+ 
+ .block-img {
+     width: 300px;
+     height: 300px;
+ }
+ 
+ .block-header {
+    font-weight: 700;
+    font-size: 40px;
+ }
+ .block-info{
+    font-size: 36px;
+ }
+ .block-text {
+     font-weight: 200;
+     font-size: 22px;
+     margin: 20px 0 30px 0;
+     font-family: sans-serif;
+ }
+ .block-buttom  {
+     padding: 20px 60px;
+     color: #000;
+     text-decoration: none;
+     border: 3px solid #201E1E;
+     border-radius: 11px;
+     transition: 0.3s;
+     font-size: 20px;
+     font-weight: 300;
+     display: flex;
+     justify-content: center;
+    align-self: flex-start;
+ }
+ .block-buttom:hover{
+     background-color: #201E1E;
+     color: #26AB72;
+ }
+ 
+ @media (max-width: 1024px){
+    .block-header{
+        font-size: 30px;
+    }
+    .block-info{
+        font-size: 26px;
+    }
+ }
+ @media(max-width:768px){
+    .content{
+        margin: 80px 20px 0 20px;
+    }
+    .block{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .block-right{
+        margin-top: 20px;
+        width: 350px;
+        height: 350px;
+    }
+    .block-left{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .block-text{
+        margin: 30px 0;
+    }
+    
+}
+@media (max-width: 425px){
+    .block{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .block-left{
+        padding: 0;
+        margin-right: 10px;
+        width: 50%;
+    }
+    .block-right{
+        width: 140px;
+        height: 150px;
+    }
+    .block-img{
+        width: 100px;
+        height: 90px;
+    }
+    .block-header{
+        font-size: 14px;
+    }
+    .block-info{
+        font-size: 12px;
+    }
+    .block-text{
+        font-size: 11px;
+        margin: 15px 0;
+    }
+   
+}
+@media(max-width:375px){
+    .content{
+        margin-top: 50px;
+    }
+    .block{
+        flex-direction: column-reverse;
+    }
+    .block-right{
+        align-self: center;
+        width: 320px;
+        border-radius: 30px;
+    }
+    .block-left{
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+}
+@media (max-width:320px){
+    .block-right {
+        width: 300px;
+    }
+}
